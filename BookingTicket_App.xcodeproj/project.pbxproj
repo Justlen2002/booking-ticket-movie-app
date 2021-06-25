@@ -99,6 +99,7 @@
 		A9DA9449267E2CBD00DDC754 /* BookingTicket_App */ = {
 			isa = PBXGroup;
 			children = (
+				A9DA947A267E2D1E00DDC754 /* View */,
 				A9DA944A267E2CBD00DDC754 /* AppDelegate.swift */,
 				A9DA944C267E2CBD00DDC754 /* SceneDelegate.swift */,
 				A9DA944E267E2CBD00DDC754 /* ContentView.swift */,
@@ -134,6 +135,13 @@
 				A9DA946E267E2CC000DDC754 /* Info.plist */,
 			);
 			path = BookingTicket_AppUITests;
+			sourceTree = "<group>";
+		};
+		A9DA947A267E2D1E00DDC754 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
