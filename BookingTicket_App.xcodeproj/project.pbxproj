@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90FC30C2687221C00F045AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A90FC30B2687221C00F045AC /* GoogleService-Info.plist */; };
 		A9DA944B267E2CBD00DDC754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA944A267E2CBD00DDC754 /* AppDelegate.swift */; };
 		A9DA944D267E2CBD00DDC754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA944C267E2CBD00DDC754 /* SceneDelegate.swift */; };
 		A9DA944F267E2CBD00DDC754 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA944E267E2CBD00DDC754 /* ContentView.swift */; };
@@ -15,6 +16,9 @@
 		A9DA9457267E2CC000DDC754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DA9455267E2CC000DDC754 /* LaunchScreen.storyboard */; };
 		A9DA9462267E2CC000DDC754 /* BookingTicket_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA9461267E2CC000DDC754 /* BookingTicket_AppTests.swift */; };
 		A9DA946D267E2CC000DDC754 /* BookingTicket_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA946C267E2CC000DDC754 /* BookingTicket_AppUITests.swift */; };
+		AF2914A8F4A49F41FF04DE1D /* Pods_BookingTicket_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8F55D7A463B7B14D3BADC /* Pods_BookingTicket_App.framework */; };
+		BA256A98368B1D9754D55C51 /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6150B747C0FB80E1C978DD4F /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework */; };
+		CBD794C57855F19DCAAE0C53 /* Pods_BookingTicket_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818EE09D648AE93F7FC4F7AB /* Pods_BookingTicket_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D5A0AB75B954AE177E9D65 /* Pods-BookingTicket_App-BookingTicket_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingTicket_App-BookingTicket_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookingTicket_App-BookingTicket_AppUITests/Pods-BookingTicket_App-BookingTicket_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BF8F55D7A463B7B14D3BADC /* Pods_BookingTicket_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookingTicket_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35572F5DD1DB5255BFD15794 /* Pods-BookingTicket_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingTicket_AppTests.release.xcconfig"; path = "Target Support Files/Pods-BookingTicket_AppTests/Pods-BookingTicket_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6150B747C0FB80E1C978DD4F /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookingTicket_App_BookingTicket_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A546261331D8026105540C8 /* Pods-BookingTicket_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingTicket_App.debug.xcconfig"; path = "Target Support Files/Pods-BookingTicket_App/Pods-BookingTicket_App.debug.xcconfig"; sourceTree = "<group>"; };
+		7143DDB6043A5E845064400A /* Pods-BookingTicket_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingTicket_App.release.xcconfig"; path = "Target Support Files/Pods-BookingTicket_App/Pods-BookingTicket_App.release.xcconfig"; sourceTree = "<group>"; };
+		818EE09D648AE93F7FC4F7AB /* Pods_BookingTicket_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookingTicket_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845F7E48DBDD2850F5BFD015 /* Pods-BookingTicket_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingTicket_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-BookingTicket_AppTests/Pods-BookingTicket_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA18BE70DD2E8FD09D8E82D /* Pods-BookingTicket_App-BookingTicket_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingTicket_App-BookingTicket_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-BookingTicket_App-BookingTicket_AppUITests/Pods-BookingTicket_App-BookingTicket_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A90FC30B2687221C00F045AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9DA9447267E2CBD00DDC754 /* BookingTicket_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookingTicket_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DA944A267E2CBD00DDC754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DA944C267E2CBD00DDC754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2914A8F4A49F41FF04DE1D /* Pods_BookingTicket_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD794C57855F19DCAAE0C53 /* Pods_BookingTicket_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA256A98368B1D9754D55C51 /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				A9DA9460267E2CC000DDC754 /* BookingTicket_AppTests */,
 				A9DA946B267E2CC000DDC754 /* BookingTicket_AppUITests */,
 				A9DA9448267E2CBD00DDC754 /* Products */,
+				E5798DEA2C720D430B5E1188 /* Pods */,
+				F1A7520034BE9AC238FAF9C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				A9DA947A267E2D1E00DDC754 /* View */,
+				A90FC30B2687221C00F045AC /* GoogleService-Info.plist */,
 				A9DA944A267E2CBD00DDC754 /* AppDelegate.swift */,
 				A9DA944C267E2CBD00DDC754 /* SceneDelegate.swift */,
 				A9DA944E267E2CBD00DDC754 /* ContentView.swift */,
@@ -144,6 +164,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E5798DEA2C720D430B5E1188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A546261331D8026105540C8 /* Pods-BookingTicket_App.debug.xcconfig */,
+				7143DDB6043A5E845064400A /* Pods-BookingTicket_App.release.xcconfig */,
+				06D5A0AB75B954AE177E9D65 /* Pods-BookingTicket_App-BookingTicket_AppUITests.debug.xcconfig */,
+				9FA18BE70DD2E8FD09D8E82D /* Pods-BookingTicket_App-BookingTicket_AppUITests.release.xcconfig */,
+				845F7E48DBDD2850F5BFD015 /* Pods-BookingTicket_AppTests.debug.xcconfig */,
+				35572F5DD1DB5255BFD15794 /* Pods-BookingTicket_AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1A7520034BE9AC238FAF9C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF8F55D7A463B7B14D3BADC /* Pods_BookingTicket_App.framework */,
+				6150B747C0FB80E1C978DD4F /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework */,
+				818EE09D648AE93F7FC4F7AB /* Pods_BookingTicket_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9DA9471267E2CC000DDC754 /* Build configuration list for PBXNativeTarget "BookingTicket_App" */;
 			buildPhases = (
+				6B36FFBB421481BBC7A6A2DC /* [CP] Check Pods Manifest.lock */,
 				A9DA9443267E2CBD00DDC754 /* Sources */,
 				A9DA9444267E2CBD00DDC754 /* Frameworks */,
 				A9DA9445267E2CBD00DDC754 /* Resources */,
+				B64512513FF6755A0AB8EE19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9DA9474267E2CC000DDC754 /* Build configuration list for PBXNativeTarget "BookingTicket_AppTests" */;
 			buildPhases = (
+				C1DFEE6ED28E2B405A3C8F8C /* [CP] Check Pods Manifest.lock */,
 				A9DA9459267E2CC000DDC754 /* Sources */,
 				A9DA945A267E2CC000DDC754 /* Frameworks */,
 				A9DA945B267E2CC000DDC754 /* Resources */,
@@ -186,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9DA9477267E2CC000DDC754 /* Build configuration list for PBXNativeTarget "BookingTicket_AppUITests" */;
 			buildPhases = (
+				6534E67645E04ADFFA67F84B /* [CP] Check Pods Manifest.lock */,
 				A9DA9464267E2CC000DDC754 /* Sources */,
 				A9DA9465267E2CC000DDC754 /* Frameworks */,
 				A9DA9466267E2CC000DDC754 /* Resources */,
+				8FCA355D4F1C76B7AB0E3E76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9DA9457267E2CC000DDC754 /* LaunchScreen.storyboard in Resources */,
+				A90FC30C2687221C00F045AC /* GoogleService-Info.plist in Resources */,
 				A9DA9454267E2CC000DDC754 /* Preview Assets.xcassets in Resources */,
 				A9DA9451267E2CC000DDC754 /* Assets.xcassets in Resources */,
 			);
@@ -269,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6534E67645E04ADFFA67F84B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookingTicket_App-BookingTicket_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B36FFBB421481BBC7A6A2DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookingTicket_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FCA355D4F1C76B7AB0E3E76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookingTicket_App-BookingTicket_AppUITests/Pods-BookingTicket_App-BookingTicket_AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookingTicket_App-BookingTicket_AppUITests/Pods-BookingTicket_App-BookingTicket_AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookingTicket_App-BookingTicket_AppUITests/Pods-BookingTicket_App-BookingTicket_AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64512513FF6755A0AB8EE19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookingTicket_App/Pods-BookingTicket_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookingTicket_App/Pods-BookingTicket_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookingTicket_App/Pods-BookingTicket_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DFEE6ED28E2B405A3C8F8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookingTicket_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9DA9443267E2CBD00DDC754 /* Sources */ = {
@@ -440,6 +592,7 @@
 		};
 		A9DA9472267E2CC000DDC754 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A546261331D8026105540C8 /* Pods-BookingTicket_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +612,7 @@
 		};
 		A9DA9473267E2CC000DDC754 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7143DDB6043A5E845064400A /* Pods-BookingTicket_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +632,7 @@
 		};
 		A9DA9475267E2CC000DDC754 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845F7E48DBDD2850F5BFD015 /* Pods-BookingTicket_AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +654,7 @@
 		};
 		A9DA9476267E2CC000DDC754 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35572F5DD1DB5255BFD15794 /* Pods-BookingTicket_AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +676,7 @@
 		};
 		A9DA9478267E2CC000DDC754 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D5A0AB75B954AE177E9D65 /* Pods-BookingTicket_App-BookingTicket_AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +696,7 @@
 		};
 		A9DA9479267E2CC000DDC754 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA18BE70DD2E8FD09D8E82D /* Pods-BookingTicket_App-BookingTicket_AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
