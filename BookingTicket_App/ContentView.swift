@@ -11,8 +11,8 @@ import Firebase
 
 struct ContentView: View {
     var body: some View {
-        Detail()
-        //Lobby().preferredColorScheme(.dark)
+        //Detail()
+        Lobby().preferredColorScheme(.dark)
     }
 }
 
@@ -33,7 +33,7 @@ struct Home: View{
                                 
                             }) {
                                 HStack(spacing: 8){
-                                    Text("Movies In New York")
+                                    Text("Movies In Da  ")
                                     Image(systemName: "chevron.down").font(.body)
                                 }
                                 }.foregroundColor(.white)
@@ -44,8 +44,8 @@ struct Home: View{
                             UserDefaults.standard.set(false, forKey: "status")
                             NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
                         }){
-                            Image("icons8-menu-48").renderingMode(.original)
-                        }.background(Color("Color-2")).cornerRadius(10).padding(.top, 35)
+                            Image("icons8-sign-out-30").renderingMode(.original)
+                        }.background(Color("Color-1")).cornerRadius(10).padding(.top, 35)
                         
                     }
                     
@@ -83,62 +83,91 @@ struct Home: View{
     
 
 struct Detail : View {
+    @State private var message = synopsis
+    @State private var textStyle = UIFont.TextStyle.body
+    
     var body : some View{
         ScrollView(.vertical, showsIndicators: false){
             VStack(spacing: 15){
-                HStack{
-                    Button(action: {}, label: {
-                        Image(systemName: "chevron.left").font(.title)
-                    })
+                Section(footer: FooterView() ){
+                    HStack{
+                        
+                        Spacer()
+                        Button(action: {}, label: {
+                            Image(systemName: "bookmark").font(.title)
+                        })
+                    }.overlay(
+                        Text("Detail Movie").font(.title).fontWeight(.semibold)
+                    ).padding().foregroundColor(.white)
                     
-                    Spacer()
-                    Button(action: {}, label: {
-                        Image(systemName: "bookmark").font(.title)
-                    })
-                }.overlay(
-                    Text("Detail Movie").font(.title).fontWeight(.semibold)
-                ).padding().foregroundColor(.white)
-                
-                ZStack{
+                    ZStack{
+                        
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(Color.white.opacity(0.2))
+                            .padding(.horizontal)
+                            .offset(y: 12)
+                        
+                        Image("Carol")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .cornerRadius(15)
+                        
+                    }
+                    .frame(width: getRect().width / 1.5, height: getRect().height / 2)
+                    .padding(.top, 20)
                     
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.white.opacity(0.2))
-                        .padding(.horizontal)
-                        .offset(y: 12)
+                    VStack(alignment: .leading, spacing: 15){
+                        Text("Carol")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+
+                        Text("Director: Todd Haynes | 4")
+                            .foregroundColor(.white)
+                            .overlay(
+
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                    .offset(x: 35, y: -2)
+                                ,alignment: .trailing
+                            )
+                        
+                        Text("synopsis")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.vertical)
+                        
+                        Text(synopsis).foregroundColor(.white)
+
+                    }
+                    .padding(.top, 55)
+                    .padding(.horizontal)
+                    .padding(.leading, 10)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
-                    Image("Carol")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .cornerRadius(15)
-                    
+
                 }
-                .frame(width: getRect().width / 1.5, height: getRect().height / 2)
-                .padding(.top, 20)
-                
-                VStack(alignment: .leading, spacing: 15){
-                    Text("Carol")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    
-                    Text("Director: ..... | 4")
-                        .foregroundColor(.white)
-                        .overlay(
-                            
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.yellow)
-                                .offset(x: 35, y: -2)
-                            ,alignment: .trailing
-                        )
-                    
-                }
-                .padding(.top, 55)
-                .padding(.horizontal)
-                .padding(.leading, 10)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                
             }
         }.background(Color("Color").edgesIgnoringSafeArea(.all))
+    }
+}
+
+struct FooterView : View {
+    var body: some View{
+        NavigationLink(
+            destination: Text("Destination"),
+            label: {
+                Text("Buy Ticket")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.vertical)
+                    .frame(width: getRect().width / 2)
+                    .background(Color("Color-1"))
+                    .cornerRadius(15)
+        }
+        ).shadow(color: Color.white.opacity(0.15), radius: 5, x: 5, y: 5 )
+        .shadow(color: Color.white.opacity(0.15), radius: 5, x: -5, y: -5 )
     }
 }
 
@@ -147,7 +176,6 @@ extension View{
         return UIScreen.main.bounds
     }
 }
-
 
 struct SearchView : View {
     @State var txt = ""
@@ -461,3 +489,9 @@ type(id: 2, row: [
     row(id: 2, name: "movie_3", time: "1h 12m", image: "Dora"),
 ]),
 ]
+
+
+
+
+
+

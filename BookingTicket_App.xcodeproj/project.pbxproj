@@ -16,6 +16,7 @@
 		A9DA9457267E2CC000DDC754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DA9455267E2CC000DDC754 /* LaunchScreen.storyboard */; };
 		A9DA9462267E2CC000DDC754 /* BookingTicket_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA9461267E2CC000DDC754 /* BookingTicket_AppTests.swift */; };
 		A9DA946D267E2CC000DDC754 /* BookingTicket_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA946C267E2CC000DDC754 /* BookingTicket_AppUITests.swift */; };
+		A9FF779726884A0D00CDC450 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF779626884A0D00CDC450 /* MovieModel.swift */; };
 		AF2914A8F4A49F41FF04DE1D /* Pods_BookingTicket_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF8F55D7A463B7B14D3BADC /* Pods_BookingTicket_App.framework */; };
 		BA256A98368B1D9754D55C51 /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6150B747C0FB80E1C978DD4F /* Pods_BookingTicket_App_BookingTicket_AppUITests.framework */; };
 		CBD794C57855F19DCAAE0C53 /* Pods_BookingTicket_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818EE09D648AE93F7FC4F7AB /* Pods_BookingTicket_AppTests.framework */; };
@@ -63,6 +64,7 @@
 		A9DA9468267E2CC000DDC754 /* BookingTicket_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookingTicket_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DA946C267E2CC000DDC754 /* BookingTicket_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTicket_AppUITests.swift; sourceTree = "<group>"; };
 		A9DA946E267E2CC000DDC754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FF779626884A0D00CDC450 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		A9DA9449267E2CBD00DDC754 /* BookingTicket_App */ = {
 			isa = PBXGroup;
 			children = (
+				A9FF7795268849E300CDC450 /* Model */,
 				A9DA947A267E2D1E00DDC754 /* View */,
 				A90FC30B2687221C00F045AC /* GoogleService-Info.plist */,
 				A9DA944A267E2CBD00DDC754 /* AppDelegate.swift */,
@@ -162,6 +165,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A9FF7795268849E300CDC450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF779626884A0D00CDC450 /* MovieModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E5798DEA2C720D430B5E1188 /* Pods */ = {
@@ -427,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FF779726884A0D00CDC450 /* MovieModel.swift in Sources */,
 				A9DA944B267E2CBD00DDC754 /* AppDelegate.swift in Sources */,
 				A9DA944D267E2CBD00DDC754 /* SceneDelegate.swift in Sources */,
 				A9DA944F267E2CBD00DDC754 /* ContentView.swift in Sources */,
