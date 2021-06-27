@@ -11,8 +11,8 @@ import Firebase
 
 struct ContentView: View {
     var body: some View {
-        //Home()
-        Lobby().preferredColorScheme(.dark)
+        Detail()
+        //Lobby().preferredColorScheme(.dark)
     }
 }
 
@@ -23,9 +23,10 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Home: View{
+    @State var show = false
     var body: some View{
                 VStack(spacing: 15){
-                    HStack{
+                    HStack(alignment: .top){
                         VStack(alignment: .leading, spacing: 15){
                             Text("Browse").font(.largeTitle)
                             Button(action: {
@@ -35,31 +36,117 @@ struct Home: View{
                                     Text("Movies In New York")
                                     Image(systemName: "chevron.down").font(.body)
                                 }
-                            }.foregroundColor(.black)
+                                }.foregroundColor(.white)
                         }
                         Spacer()
                         Button(action: {
-                            
+                            try! Auth.auth().signOut()
+                            UserDefaults.standard.set(false, forKey: "status")
+                            NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
                         }){
                             Image("icons8-menu-48").renderingMode(.original)
+                        }.background(Color("Color-2")).cornerRadius(10).padding(.top, 35)
+                        
+                    }
+                    
+                    SearchView().cornerRadius(30)
+                    
+                    ScrollView(.vertical, showsIndicators: false){
+                        VStack(spacing: 15){
+                            ForEach(datas){i in
+                                ScrollView(.horizontal, showsIndicators: false){
+                                    HStack(spacing : 15){
+                                        ForEach(i.row){j in
+                                            
+                                            VStack(alignment: .leading, spacing: 12){
+                                                Image(j.image).onTapGesture {
+                                                    self.show.toggle()
+                                                }
+                                                Text(j.name).font(.caption).lineLimit(1).foregroundColor(.white)
+                                                Text(j.time).font(.caption).foregroundColor(.white)
+                                            }.foregroundColor(Color.black.opacity(0.5)).frame(width: 135)
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
-                    SearchView().padding(.vertical,15)
                     
-                    Button(action: {
-                        try! Auth.auth().signOut()
-                        UserDefaults.standard.set(false, forKey: "status")
-                        NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
-                    }){
-                        Text("Log out").foregroundColor(.white).fontWeight(.bold).padding(.vertical).padding(.horizontal, 50).background(Color("Color-1")).clipShape(Capsule()).shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
-                    }.background(Color("Color-2")).cornerRadius(10).padding(.top, 35)
+
                     
+                    
+                }.padding(.horizontal, 5).sheet(isPresented: $show){
+                    Detail()
+        }
+    }
+}
+    
+
+struct Detail : View {
+    var body : some View{
+        ScrollView(.vertical, showsIndicators: false){
+            VStack(spacing: 15){
+                HStack{
+                    Button(action: {}, label: {
+                        Image(systemName: "chevron.left").font(.title)
+                    })
+                    
+                    Spacer()
+                    Button(action: {}, label: {
+                        Image(systemName: "bookmark").font(.title)
+                    })
+                }.overlay(
+                    Text("Detail Movie").font(.title).fontWeight(.semibold)
+                ).padding().foregroundColor(.white)
+                
+                ZStack{
+                    
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white.opacity(0.2))
+                        .padding(.horizontal)
+                        .offset(y: 12)
+                    
+                    Image("Carol")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .cornerRadius(15)
                     
                 }
-
+                .frame(width: getRect().width / 1.5, height: getRect().height / 2)
+                .padding(.top, 20)
+                
+                VStack(alignment: .leading, spacing: 15){
+                    Text("Carol")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    
+                    Text("Director: ..... | 4")
+                        .foregroundColor(.white)
+                        .overlay(
+                            
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                                .offset(x: 35, y: -2)
+                            ,alignment: .trailing
+                        )
+                    
+                }
+                .padding(.top, 55)
+                .padding(.horizontal)
+                .padding(.leading, 10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
             }
-        }
-    
+        }.background(Color("Color").edgesIgnoringSafeArea(.all))
+    }
+}
+
+extension View{
+    func getRect()->CGRect{
+        return UIScreen.main.bounds
+    }
+}
 
 
 struct SearchView : View {
@@ -338,3 +425,39 @@ struct ErrorView : View {
         }.background(Color.black.opacity(0.35).edgesIgnoringSafeArea(.all))
     }
 }
+
+struct type : Identifiable{
+    var id : Int
+    var row : [row]
+}
+
+struct row : Identifiable{
+    var id : Int
+    var name : String
+    var time : String
+    var image : String
+}
+
+struct datetype : Identifiable{
+    var id : Int
+    var date : String
+    var day : String
+}
+
+var datas = [
+type(id: 0, row: [
+    row(id: 0, name: "movie_1", time: "1h 12m", image: "Dora"),
+    row(id: 1, name: "movie_2", time: "1h 12m", image: "Dora"),
+    row(id: 2, name: "movie_3", time: "1h 12m", image: "Dora"),
+]),
+type(id: 1, row: [
+    row(id: 0, name: "movie_1", time: "1h 12m", image: "Dora"),
+    row(id: 1, name: "movie_2", time: "1h 12m", image: "Dora"),
+    row(id: 2, name: "movie_3", time: "1h 12m", image: "Dora"),
+]),
+type(id: 2, row: [
+    row(id: 0, name: "movie_1", time: "1h 12m", image: "Dora"),
+    row(id: 1, name: "movie_2", time: "1h 12m", image: "Dora"),
+    row(id: 2, name: "movie_3", time: "1h 12m", image: "Dora"),
+]),
+]
