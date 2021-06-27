@@ -6,9 +6,9 @@ App have function:
 - Show movie
 - Show detail movie
 
-unfinished finctions:
+Unfinished finctions:
 - Search movie
 - Pay bill
 - deal with database
 
-main code at: booking-ticket-movie-app/BookingTicket_App/ContentView.swift
+Main code at: booking-ticket-movie-app/BookingTicket_App/ContentView.swift
