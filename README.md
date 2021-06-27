@@ -10,3 +10,5 @@ unfinished finctions:
 - Search movie
 - Pay bill
 - deal with database
+
+main code at: booking-ticket-movie-app/BookingTicket_App/ContentView.swift
